@@ -26,11 +26,11 @@ namespace Planner
             FiveThreeSixBroad.Stories = 100;
             FiveThreeSixBroad.Purchase("Jerry");
             FiveThreeSixBroad.dateTime();
-            List<Building> listOfBuildings = new List<Building>();
-            listOfBuildings.Add(FiveOneTwoEigth);
-            listOfBuildings.Add(OneTwoThreeMain);
-            listOfBuildings.Add(FiveThreeSixBroad);
-            foreach (var item in listOfBuildings)
+            City listOfBuildings = new City();
+            listOfBuildings.addBuilding(FiveOneTwoEigth);
+            listOfBuildings.addBuilding(OneTwoThreeMain);
+            listOfBuildings.addBuilding(FiveThreeSixBroad);
+            foreach (var item in listOfBuildings.collectionOfBuildings)
             {
                 Console.Write($@"
 
